@@ -146,6 +146,9 @@
         /* on baisse les tailles des boutons */
         width: 250px;
     }
+    nav ul li:nth-child(6) {
+    display: none;
+    }
 }
 
 /* Media Equipement */

@@ -49,7 +49,7 @@ nav li:hover {
     display: flex;
     align-items: center;
     transition: all 0.2s;
-    background: #f1f1f1;
+    background: #ff1212;
     height: 100%;
 }
 
@@ -113,6 +113,7 @@ h1  {
     margin-top: 40px;
     border: 1px solid #f1f1f1;
     width: 150px;
+    white-space: nowrap;
 }
 
 .btn-home:hover {
