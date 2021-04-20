@@ -1,6 +1,9 @@
 // Animation de la galerie
 const btns = document.querySelectorAll('.btn-modal');
 const modalEquipement = document.querySelector('.block-modal')
+// Activaton de la carte
+const btnMap = document.querySelector('.btn-outline-choice');
+const map = document.querySelector('.map');
 // const closeModal = document.querySelector('.close-modal');
 
 // image qu'on visualise dans la fenêtre modale
@@ -70,18 +73,6 @@ window.addEventListener('scroll', () => {
     }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
 // closeModal.addEventListener('click', () => {
 //     // La fenêtre modale repasse en display: none;
 //     modalEquipement.classList.remove('active-modal');
@@ -92,6 +83,20 @@ modalEquipement.addEventListener('click', () => {
     // La fenêtre modale repasse en display: none;
     modalEquipement.classList.remove('active-modal');
 })
+
+// si je clique sur le bouton map ça active la classe
+let isVisible = false;
+//console.log(isVisible);
+
+btnMap.addEventListener('click', () => {
+    map.classList.toggle('is-visible');
+    // Par defaut quand on clique on reste à true, on dit donc que c'est le contraire de isVisible
+    isVisible = !isVisible
+    // on fait un ternaire pour afficher la carte
+    isVisible ? btnMap.innerText = 'Fermer' : btnMap.innerText = 'Ouvrir' ;
+})
+
+
 
 
 // https://discuss.codecademy.com/t/what-does-this-syntax-do/432913

@@ -124,15 +124,52 @@
 @media screen and (max-width: 1200px) {
     .training-choice {
         /* au lieu de 30% on passe du relatif en absolu pour pas que ça devienne trop petit */
-        width: 400px; 
+        width: 90vw;
+        margin: 20px;
+    }
+
+    .map {
+        height: 750px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+
+    .training-choice {
+        width: 100%;
+        padding: 10px auto;
+    }
+    .map {
+        display: block;
+    }
+    .btn-outline-choice {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .training-choice {
+        width: 100%;
+        margin: 20px;
+    }
+    .map {
+        margin: 20px; 
+        background-size: cover; /* version standardisée */
+        background-position:0%;
+    } 
+    .btn-outline-choice {
+        display: none;
     }
 }
 
 @media screen and (max-width: 775px) {
 
     .training-choice {
-        width: 250px;
-        margin: 50px 0px 70px;
+        width: 100%;
+        margin: 20px auto;
     }
 
     .training-choice:nth-child(2) {
@@ -142,9 +179,13 @@
         font-size: 40px;
         margin-bottom: 20px;
     }
+    .map {
+        height: 400px;
+    }
     .btn-outline-choice {
         /* on baisse les tailles des boutons */
         width: 250px;
+        margin-top: 20px;
     }
     nav ul li:nth-child(6) {
     display: none;

@@ -193,18 +193,19 @@ h1  {
     left: -140px;
 }
 
-/* Section 2 Se déplacer */
+/* Section 2 La carte */
 
 .choice {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     background: #000;
     background-image: -webkit-linear-gradient(-20deg, #000, #b91111);
 }
 
 .training-choice {
-    width: 30%;
+    width: 100%;
     text-align: center;
     color: #f1f1f1;
     margin: 50px 20px 70px;
@@ -246,6 +247,19 @@ h1  {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #000;
+}
+
+.map {
+    display: none;
+    background: url(./ressources/Map.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1000px;
+    margin-bottom: 50px;
+}
+
+.is-visible {
+    display: block;
 }
 
 /* galerie goodies */
