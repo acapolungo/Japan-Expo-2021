@@ -93,7 +93,7 @@ btnMap.addEventListener('click', () => {
     // Par defaut quand on clique on reste à true, on dit donc que c'est le contraire de isVisible
     isVisible = !isVisible
     // on fait un ternaire pour afficher la carte
-    isVisible ? btnMap.innerText = 'Fermer' : btnMap.innerText = 'Ouvrir' ;
+    isVisible ? btnMap.innerText = 'Fermer' : btnMap.innerText = 'Carte' ;
 })
 
 
